@@ -4,7 +4,7 @@ define("SITE_TITLE", 'PHP MongoDB Club');
 // 网站地址
 define("BASE_PATH", "http://localhost");
 // 网站目录
-define("APP_PATH", "/~cooper/pmc");
+define("APP_PATH", "/pmc");
 // 默认加载类
 define("DEFAULT_CONTROLLER", 'welcome');
 
