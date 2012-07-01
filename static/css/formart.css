@@ -1,0 +1,68 @@
+/* 防止用户自定义背景颜色对网页的影响，添加让用户可以自定义字体 */
+html{color:#000;background:#fff;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;}
+/* 内外边距通常让各个浏览器样式的表现位置不同 */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{margin:0;padding:0;}
+/* 重设 HTML5 标签, IE 需要在 js 中 createElement(TAG) */
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { display:block;}
+/* HTML5 媒体文件跟 img 保持一致 */
+audio,canvas,video {display:inline-block;*display:inline;*zoom: 1;}
+/* 要注意表单元素并不继承父级 font 的问题 */
+body,button,input,select,textarea{font:12px/1.5 tahoma,arial,\5b8b\4f53;outline:0;resize:none}
+input,select,textarea{font-size:100%;}
+/* 去掉各Table  cell 的边距并让其边重合 */
+table{border-collapse:collapse;border-spacing:0;}
+th{text-align:inherit;}/* IE bug fixed: th 不继承 text-align*/
+caption,th {text-align:left;}/* 对齐是排版最重要的因素, 别让什么都居中 */
+/* 去除默认边框 */
+fieldset,img{border:0;}
+/* ie6 7 8(q) bug 显示为行内表现 */
+iframe{display:block;}
+/* 一致的 del 样式 */
+del{text-decoration:line-through;}
+address,caption,cite,code,dfn,em,th,var {font-style:normal;font-weight:500;}
+/* 去掉列表前的标识, li 会继承 */
+ol,ul {list-style:none;}
+/* 来自yahoo, 让标题都自定义, 适应多个系统应用 */
+h1,h2,h3,h4,h5,h6 {font-size:100%;font-weight:500;}
+/* 统一上标和下标 */
+sub, sup {font-size: 75%; line-height: 0; position: relative; vertical-align: baseline;}
+sup {top: -0.5em;}
+sub {bottom: -0.25em;}
+/* 让链接在 hover 状态下显示下划线 */
+a{text-decoration:none;}
+a:hover{text-decoration:underline;}
+/* 设置内联, 减少浮动带来的bug */
+.floatleft,.floatright {display:inline;}
+.floatleft{float:left;}
+.floatright {float:right;}
+/* 清理浮动 */
+.clear:after {visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0;}
+.clear{clear:both;zoom:1;font-size:0;height:0; /* for IE6 IE7 */}
+.blank{padding:2.5px;}
+/*盒子阴影*/
+.shadow{
+    -moz-box-shadow:1px 3px 12px #bbb;
+    -webkit-box-shadow:1px 3px 12px #bbb;
+    box-shadow:1px 3px 12px #bbb;
+    /* 一定要设置background, 不然 ie 会显示在字体上 */
+    background: #fff;
+    /* gte=ie8 */
+    -ms-filter:"progid:DXImageTransform.Microsoft.Glow(color=#aaaaaa,strength=3) progid:DXImageTransform.Microsoft.Shadow(color=#eeeeee,direction=0,strength=6) progid:DXImageTransform.Microsoft.Shadow(color=#dddddd,direction=90,strength=10) progid:DXImageTransform.Microsoft.Shadow(color=#dddddd,direction=180,strength=6) progid:DXImageTransform.Microsoft.Shadow(color=#eeeeee,direction=270,strength=6)";
+    /* lte=ie7 */
+    *filter:
+    progid:DXImageTransform.Microsoft.Shadow(color=#eeeeee,direction=0,strength=7)
+    progid:DXImageTransform.Microsoft.Shadow(color=#dddddd,direction=90,strength=10)
+    progid:DXImageTransform.Microsoft.Shadow(color=#dddddd,direction=180,strength=10)
+    progid:DXImageTransform.Microsoft.Shadow(color=#eeeeee,direction=270,strength=7);
+}
+
+/* 相当于正常的 position:fixed; top:0;  */
+.fixed-top {bottom:auto;top:0;_bottom:auto;_top:expression(eval(document.documentElement.scrollTop));}
+/* 相当于正常的 position:fixed;bottom:0px; */
+.fixed-bottom {bottom:0;top:auto;_bottom:auto;_top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0)));}
+/* 相当于正常的 position:fixed;left:0px; */
+.fixed-left{left:0;_position:absolute;right:auto;_left:expression(eval(document.documentElement.scrollLeft));}
+/* 相当于正常的 position:fixed;right:0; */
+.fixed-right {right:0;left:auto;_right:auto;_left:expression(eval(document.documentElement.scrollLeft+document.documentElement.clientWidth-this.offsetWidth)-(parseInt(this.currentStyle.marginLeft,10)||0)-(parseInt(this.currentStyle.marginRight,10)||0));}
+/* 当不是 https 时，可以把 # 换成 about:blank 以提升效率 */
+html,html body {_background-image:url('about:blank');_background-attachment:fixed;}

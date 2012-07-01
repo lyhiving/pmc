@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+html {-webkit-font-smoothing: antialiased;background: #fff;}
+body {-webkit-text-size-adjust:none;background: #fff;color: #222;font-size: 12px;line-height: 180%;font-family: "Microsoft Yahei","Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Verdana, Tahoma, sans-serif;border-top:5px #005580 solid;}
+a{color: #222;}
+
+/*Header*/
+header{position:relative;margin:0 auto;width:900px;height:60px;}
+header img{padding:5px;}
+header #menu{position:absolute;left:150px;top:13px;}
+header #info{position:absolute;right:20px;top:13px;line-height:25px;}
+
+/*Guide*/
+#guide-outer{background:#0088cc;border-bottom:3px solid #005580;margin-bottom:10px;}
+#guide{position:relative;margin:0 auto;width:900px;color:#fff;}
+#guide h1{padding:10px 10px 0 10px;font-size:20px;color:#fff;font-weight: normal;line-height:24px;background-image:-webkit-gradient(linear,left top, right bottom,from(rgba(250, 250, 250, 1)),to(rgba(230, 230, 240, 1)));-webkit-background-clip: text;background-clip: text;-webkit-text-fill-color: transparent;text-fill-color: transparent;text-shadow:  0 0 0 rgba(250, 250, 250, 0.9), 0 -1px 1px rgba(0, 0, 0, 0.2);}
+#guide p {padding:10px;color:#ebf9db}
+#guide p a{color:#fff;}
+#guide p a:hover{text-decoration:underline}
+#guide .pills{overflow:hidden;position:absolute;right:5px;top:20px;}
+
+table.item-list{width:100%}
+table.item-list tr:first-child{border-top:none}
+table.item-list td{padding:10px;vertical-align:top}
+table.item-list td.avatar{width:48px;height:48px;padding-right:0;line-height:0}
+table.item-list td.avatar img{width:48px;height:48px;border-radius:3px;}
+table.item-list td.content{word-break:break-word}
+table.item-list td.reply-count{text-align:right;padding-left:0}
+table.item-list h3{font-size:100%;padding-bottom:10px;line-height:18px}
+
+.box{background-color:white;-moz-border-radius:3px;border-radius:3px;margin-bottom:10px;-moz-box-shadow:0 0 0 1px #DDD;-webkit-box-shadow:0 0 0 1px #DDD;box-shadow:0 0 0 1px #DDD}
+
+#content{margin:0 auto;width:900px;}
+#content a{color:#0088cc;text-decoration:none}
+#content a:hover{color:#005580;text-decoration:underline}
+#content .label a{color:#fff;text-decoration:none}
+#content .label a:hover{color:#ccc;text-decoration:none}
+
+/*主题内页*/
+.topic-box{padding: 5px 0;}
+.topic-view{width:100%;}
+.topic-view .avatar{width:60px; vertical-align:top;text-align:center}
+.topic-view .avatar img{width:40px;height:40px;border-radius:3px;}
+.topic-view .content{vertical-align:top;font-size:14px;font-family: "Helvetica Neue","Georgia" Helvetica, Arial, sans-serif;text-align:justify;text-justify:inter-ideograph;word-wrap:break-word;word-break:break-all;line-height:180%;color:#444}
+.topic-view .content b{color:#698130}
+.topic-view .content .meta{font-size:12px;font-family: "Microsoft Yahei", Arial, sans-serif;color:#888}
+.edit_label{font:normal 9px Arial !important;border-radius:5px;padding:1px 5px;background:#efefef;color:#777 !important}
+.delete_label{font:normal 9px Arial !important;border-radius:5px;padding:1px 5px;background:#efefef;color:#777 !important}
+.top_label{font-size:11px;border-radius:5px;padding:2px 5px;background:#ddd;color:#555 !important}
+
+.line{margin:10px 5px;border-top:1px solid #eee}
+
+/*按钮*/
+#topic-form{padding:10px; line-height: 50px;}
+#topic-form #topic_title{width:99%;}
+#topic-form .textarea{height:150px;width:99%;}
+#topic-form .topic_tag{width:100%;}
+#topic-form .topic_tag label{float: left;padding: 0 5px;}
+#topic-form .topic_tag label input{float: left;}
+#reply-form .textarea{height:100px;width:98%;}
+#reply-form .content{line-height: 50px;}
+
+footer{text-align:center;height:60px;}
+
+/*input ans textarea*/
+.blank{padding:3px;font-size:0;}
+.input{border:1px inset #ccc;font-family: "Microsoft Yahei";background:#fff;padding:5px;color:#000}
+.input:focus{background:#f0ebaf}
+.input_hover{background:#f0ebaf}
+.textarea{border:1px inset #ccc;background:#fff;padding:5px;overflow:auto;font:normal 12px "Microsoft Yahei","Tahoma";color:#000}
+.textarea:focus{background:#f0ebaf}
+.author{color: #0088cc}
+
+/* 注册 */
+
+#login_form{margin:50px auto;width:400px}
+#join_form{margin:50px auto;width:400px}
+#forget_form{margin:50px auto;width:390px}
+#login_form td,#join_form td,#forget_form td{padding:5px 10px;}
+#tag_order {width: 20px;}
+#tag_name {width: 300px;}
